@@ -16,6 +16,10 @@ Enjoy a freshly built libpdfium.
 
 ### Notes.
 
-The debian-config/libpdfium-dev.install file controls which files are copied and to where.
+The `debian-config/libpdfium-dev.install` file controls which files are copied and to where.
 
 `debian-config/control` has the copyright, maintainer and other metadata about the deb.
+
+To build the deb, you'll need to install the following packages:
+
+  * `sudo apt-get install build-essential dpkg-dev dh-make dput`
