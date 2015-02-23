@@ -1,0 +1,47 @@
+pdfium (0.1+git20150223-1) trusty; urgency=low
+
+  * Pull latest source from upstream git repo
+
+ -- Nathan Stitt <nathan@stitt.org>  Tue, 17 Feb 2015 17:34:27 +0000
+
+pdfium (0.1+git20150217-1) trusty; urgency=low
+
+  * Pull latest source from upstream git repo
+
+ -- Nathan Stitt <nathan@stitt.org>  Tue, 17 Feb 2015 17:34:27 +0000
+
+pdfium (0.1+git20150204-3) trusty; urgency=low
+
+  * Alter include header files directory structure to match brew formula
+
+ -- Nathan Stitt <nathan@stitt.org>  Tue, 17 Feb 2015 16:28:25 +0000
+
+pdfium (0.1+git20150204-2) trusty; urgency=low
+
+  * Add freetype as a dependency
+
+ -- Nathan Stitt <nathan@stitt.org>  Wed, 04 Feb 2015 17:47:28 +0000
+
+pdfium (0.1+git20150204-1) trusty; urgency=low
+
+  * Pulled latest source from git repo
+
+ -- Nathan Stitt <nathan@stitt.org>  Tue, 03 Feb 2015 17:52:02 +0000
+
+pdfium (0.1+git20150128-1) trusty; urgency=low
+
+  * Pulled latest source from git repo
+
+ -- Nathan Stitt <nathan@stitt.org>  Tue, 20 Jan 2015 16:33:03 +0000
+
+pdfium (0.1+git20150120-1) trusty; urgency=low
+
+  * Pulled latest source from git repo
+
+ -- Nathan Stitt <nathan@stitt.org>  Tue, 20 Jan 2015 16:33:03 +0000
+
+pdfium (0.1+git20150116-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Nathan Stitt <nathan@stitt.org>  Wed, 14 Jan 2015 21:50:20 +0000

@@ -1,0 +1,4 @@
+pdfium-*
+pdfium_*
+.DS_Store
+libpdfium-dev_*.deb

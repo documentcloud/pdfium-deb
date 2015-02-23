@@ -1,0 +1,8 @@
+core/include/*  usr/include/pdfium/core/include
+fpdfsdk/include/* usr/include/pdfium/fpdfsdk/include
+third_party/bigint/*.hh usr/include/pdfium/third_party/bigint
+third_party/freetype/include/* usr/include/pdfium/third_party/freetype/include
+third_party/base/* usr/include/pdfium/third_party/base
+v8/include/* usr/include/pdfium/v8/include
+out/Release/*.a usr/lib/pdfium
+out/Release/pdfium_test usr/bin
