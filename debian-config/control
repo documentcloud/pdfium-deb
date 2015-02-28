@@ -5,8 +5,8 @@ Build-Depends: build-essential, debhelper (>= 8.0.0), gyp (>= 0.1~svn1729-3ubunt
 Standards-Version: 3.9.4
 Section: libs
 Homepage: https://code.google.com/p/pdfium/
-Vcs-Git: https://pdfium.googlesource.com/name
-Vcs-Browser: https://pdfium.googlesource.com
+Vcs-Git: https://pdfium.googlesource.com/pdfium/
+Vcs-Browser: https://pdfium.googlesource.com/pdfium/
 
 Package: libpdfium-dev
 Section: libdevel
