@@ -15,9 +15,9 @@ fi
 
 git clone https://pdfium.googlesource.com/pdfium.git $NAME
 cd $NAME
-svn co http://gyp.googlecode.com/svn/trunk build/gyp
-svn co http://v8.googlecode.com/svn/trunk v8
-svn co https://src.chromium.org/chrome/trunk/deps/third_party/icu46 v8/third_party/icu
+git clone https://chromium.googlesource.com/external/gyp build/gyp
+git clone https://chromium.googlesource.com/v8/v8.git v8
+git clone https://chromium.googlesource.com/chromium/deps/icu46 v8/third_party/icu
 cd ..
 
 tar czf $NAME.orig.tar.gz $NAME
