@@ -22,4 +22,4 @@ The `debian-config/libpdfium-dev.install` file controls which files are copied a
 
 To build the deb, you'll need to install the following packages:
 
-  * `sudo apt-get install build-essential dpkg-dev dh-make dput`
+  * `sudo apt-get install build-essential dpkg-dev dh-make dput gyp`
