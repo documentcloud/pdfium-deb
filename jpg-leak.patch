@@ -1,0 +1,41 @@
+From 4b35c3dde4ce1323d2da564d6d561808fc5222c7 Mon Sep 17 00:00:00 2001
+From: Ted Han <ted@knowtheory.net>
+Date: Tue, 3 Mar 2015 00:27:47 -0500
+Subject: [PATCH] Ensure that JPX decoder is disposed of regardless of function
+ exit point.
+
+---
+ core/src/fpdfapi/fpdf_render/fpdf_render_loadimage.cpp | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/core/src/fpdfapi/fpdf_render/fpdf_render_loadimage.cpp b/core/src/fpdfapi/fpdf_render/fpdf_render_loadimage.cpp
+index 79d7351..d12bae5 100644
+--- a/core/src/fpdfapi/fpdf_render/fpdf_render_loadimage.cpp
++++ b/core/src/fpdfapi/fpdf_render/fpdf_render_loadimage.cpp
+@@ -649,6 +649,7 @@ void CPDF_DIBSource::LoadJpxBitmap()
+     FX_BOOL bTranslateColor, bSwapRGB = FALSE;
+     if (m_pColorSpace) {
+         if (codestream_nComps != (FX_DWORD)m_pColorSpace->CountComponents()) {
++            pJpxModule->DestroyDecoder(ctx);
+             return;
+         }
+         output_nComps = codestream_nComps;
+@@ -687,6 +688,7 @@ void CPDF_DIBSource::LoadJpxBitmap()
+     if (!m_pCachedBitmap->Create(width, height, format)) {
+         delete m_pCachedBitmap;
+         m_pCachedBitmap = NULL;
++        pJpxModule->DestroyDecoder(ctx);
+         return;
+     }
+     m_pCachedBitmap->Clear(0xFFFFFFFF);
+@@ -701,6 +703,7 @@ void CPDF_DIBSource::LoadJpxBitmap()
+     if (!pJpxModule->Decode(ctx, m_pCachedBitmap->GetBuffer(), m_pCachedBitmap->GetPitch(), bTranslateColor, output_offsets)) {
+         delete m_pCachedBitmap;
+         m_pCachedBitmap = NULL;
++        pJpxModule->DestroyDecoder(ctx);
+         return;
+     }
+     FX_Free(output_offsets);
+-- 
+2.2.1
+
