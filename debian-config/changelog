@@ -1,3 +1,9 @@
+pdfium (0.1+git20150311-1) trusty; urgency=low
+
+  * Pull latest source from upstream git repo
+
+ -- Ted Han <ted@knowtheory.net>  Tue, 11 Mar 2015 01:10:00 +0000
+
 pdfium (0.1+git20150228-1) trusty; urgency=low
 
   * Pull latest source from upstream git repo
