@@ -1,4 +1,4 @@
-# Config files and build script for building libpdfium debign package
+# Config files and build script for building libpdfium debian package
 
 To use, checkout the repo and edit the debian-config/changelog.  The top line's date must
 match today's date.
