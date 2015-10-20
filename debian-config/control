@@ -1,6 +1,6 @@
 Source: pdfium
 Priority: optional
-Maintainer: Nathan Stitt <nathan@stitt.org>
+Maintainer: Ted Han <ted@documentcloud.org>
 Build-Depends: build-essential, debhelper (>= 8.0.0), gyp (>= 0.1~svn1729-3ubuntu1), libfreetype6-dev (>= 2.5.2)
 Standards-Version: 3.9.4
 Section: libs
@@ -12,8 +12,6 @@ Package: libpdfium-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}
-Description: development files for the PDFium renderer
- PDFium is an open-source PDF rendering engine.
- It's the library that enables viewing PDFs in
- the Chrome web browser
- 
+Description: The open source PDF library that powers
+ Google Chrome's PDF reader.  This is a 3rd party
+ package of PDFium by DocumentCloud.

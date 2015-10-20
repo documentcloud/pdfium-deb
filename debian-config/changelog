@@ -1,3 +1,9 @@
+pdfium (20151016.222904) trusty; urgency=low
+
+  * Update to HEAD and remove unneeded dependencies!
+
+ -- Ted Han <ted@knowtheory.net>  Fri, 16 Oct 2015 22:29:04 +0000
+
 pdfium (0.1+git20150311-1) trusty; urgency=low
 
   * Pull latest source from upstream git repo
