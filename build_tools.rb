@@ -50,12 +50,13 @@ pdfium (#{version}) #{UBUNTU_VERSION}; urgency=#{urgency}
 
   * Pull latest source from upstream git repo
 
--- #{committer}  #{timestamp}
+ -- #{committer}  #{timestamp}
 
 UPDATE
   end
   
   def version
+    # keep in sync with BUILD.sh
     @version ||= @now.strftime("%Y%m%d.%H%M%S")
   end
   
