@@ -10,9 +10,9 @@ ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
 endif
 
 override_dh_auto_build:
-	GYP_GENERATORS=ninja GYP_DEFINES='pdf_enable_v8=0 clang=0' ./build/gyp_pdfium
-	ninja -C out/Release pdfium_test
-
+	GYP_GENERATORS=make GYP_DEFINES='pdf_enable_v8=0 clang=0' ./build/gyp_pdfium
+	BUILDTYPE=Release_x64 CFLAGS="-fPIC" CXXFLAGS="-fPIC" make pdfium_test -j$(NUMJOBS)
+	sh ./make-libs out/Release_x64
 
 override_dh_auto_clean:
 	if [ -d out ]; then rm -rf out; fi
