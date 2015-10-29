@@ -28,11 +28,6 @@ fi
 
 cd $NAME # drop down into pdfium source directory
 
-echo "Reset repo and pull most recent updates"
-#git reset --hard
-git checkout master
-git pull
-
 if [ -e ./build/gyp ]; then
   echo "gyp tools exist, pulling"
   cd ./build/gyp
