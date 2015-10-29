@@ -48,7 +48,7 @@ class PDFiumBuildTools < Thor
     update = <<-UPDATE
 pdfium (#{version}) #{UBUNTU_VERSION}; urgency=#{urgency}
 
-  * Pull latest source from upstream git repo
+  * Pull latest source from upstream git repo (#{git_revision})
 
  -- #{committer}  #{timestamp}
 
@@ -58,6 +58,10 @@ UPDATE
   def version
     # keep in sync with BUILD.sh
     @version ||= @now.strftime("%Y%m%d.%H%M%S")
+  end
+  
+  def git_revision
+    `git log`.split[1]
   end
   
   def urgency
