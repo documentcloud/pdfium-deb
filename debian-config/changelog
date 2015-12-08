@@ -1,3 +1,9 @@
+pdfium (20151208.015427) trusty; urgency=low
+
+  * Pull latest source from upstream git repo (f3ccb7c0038805796429b192ecf3e49f5ef1b4fd)
+
+ -- Ted Han <ted@knowtheory.net>  Tue, 08 Dec 2015 01:54:27 +0000
+
 pdfium (20151024.163326) trusty; urgency=low
 
   * Pull latest source from upstream git repo (23c31190cbc2c3adedb1de5e3c476d47f7183576)
